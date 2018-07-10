@@ -1,7 +1,11 @@
 import React from 'react'
+import WeatherIcons from 'react-weathericons'
 
-const WeatherTemperature = () => (
-    <div><span>12° C</span></div>
+const WeatherTemperature = ({temperature, weatherState}) => (
+    <div>
+        <WeatherIcons name="day-rain" size="1x"/>
+        <span>{` ${temperature} C°`} </span>
+    </div>
 )
 
 export default WeatherTemperature

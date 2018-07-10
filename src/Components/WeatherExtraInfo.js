@@ -1,9 +1,12 @@
 import React from 'react'
+import WeatherIcons from 'react-weathericons'
 
 const WeatherExtraInfo = ({humidity, wind}) => (
     <div>
-        <span>{`${humidity} % | `}</span>
-        <span>{`${wind} wind`}</span>
+        <WeatherIcons name="humidity" size="1x"/>
+        <span>{` ${humidity} | `}</span>
+        <WeatherIcons name="strong-wind" size="1x"/>
+        <span>{` ${wind}`}</span>
     </div>
 )
 
